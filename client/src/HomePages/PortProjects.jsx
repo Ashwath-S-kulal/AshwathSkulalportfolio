@@ -1,29 +1,55 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const ProjectData = [
   {
     id: 1,
     name: "MERN Authentication",
     type: "MERN Webs",
-    image: "https://3.imimg.com/data3/GH/QI/MY-11765206/corn.jpg",
+    image: "https://material.dahuasecurity.com/uploads/image/20240516/news0516300200.png",
+    link:"https://mern-authentication-web.onrender.com"
   },
   {
     id: 2,
     name: "MERN Comment Web",
     type: "MERN Webs",
-    image: "https://cdn.pixabay.com/photo/2023/07/30/07/23/soft-wheat-8158264_1280.jpg",
+    image: "https://cdn.vectorstock.com/i/1000v/05/72/blue-chat-app-icon-on-background-3d-vector-42730572.jpg",
+    link:"https://mern-comment-page.onrender.com"
   },
   {
     id: 3,
     name: "Static Portfolio Web",
     type: "Static Webs ",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg",
+    image: "https://miro.medium.com/v2/resize:fit:1400/1*Onh9cW9KtGjDrlf5NzGYMw.jpeg",
+    link:"https://ashwath-s-kulal.github.io/Porfolio-web/"
   },
   {
     id: 4,
     name: "Boat Clone Web",
     type: "Static Webs & frontends",
-    image: "https://cdn.pixabay.com/photo/2023/07/30/07/23/soft-wheat-8158264_1280.jpg",
+    image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/lR_Radiant.png?v=1734949919",
+    link:"https://boat-product-advertising-frontend.vercel.app/"
+  },
+  {
+    id: 5,
+    name: "Agri Booking system",
+    type: "frontends",
+    image: "https://shopscanner.com/wp-content/uploads/2024/03/young-woman-controlling-plantation-scaled-e1711567975796-768x813.jpg",
+    link:"https://agricultural-booking-system.vercel.app/"
+  },
+  {
+    id: 6,
+    name: "Social Media Dashboard",
+    type: "Static Webs & frontends",
+    image: "https://www.albeadvance.com/wp-content/uploads/2025/04/review.png",
+    link:"https://github.com/Ashwath-S-kulal/Social-Media-Dashboard"
+  },
+  {
+    id: 7,
+    name: "Simple Static Web",
+    type: "Static Webs & frontends",
+    image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMeO_O53PHFJ5enVA3L-E76oBh2YjLYfZ31XXAQ-cJ6_NiK0TA",
+    link:"https://simplestaticweb.netlify.app/"
   },
 ];
 
@@ -39,7 +65,7 @@ export default function PortProjects() {
   });
 
   return (
-    <div className="flex  bg-gray-800 mx-5 mt-3 ">
+    <div className="flex  bg-gray-800 mx-5 mt-3 pt-10">
       <div className="max-w-full min-w-screen px-6 py-5 w-full">
         <h2 className="text-3xl text-white font-bold border-b-4 border-blue-600 inline-block pb-1 mb-4">
           Projects
@@ -83,7 +109,9 @@ export default function PortProjects() {
                 </div>
                 <p className="text-xs text-white mb-2">{project.type}</p>
               </div>
-              <button className=" px-6 pb-4 w-full text-yellow-500 hover:text-yellow-300">Open in Web</button>
+              <button className=" px-6 pb-4 w-full text-yellow-500 hover:text-yellow-300">
+                <NavLink to={project.link} target="blank">Open in Web</NavLink> 
+              </button>
             </div>
           ))}
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Education() {
   return (
-    <div className='bg-gray-800 p-6 mx-5 mt-5'>
+    <div className='bg-gray-800 p-6 mx-5 mt-5 pt-16'>
         <h2 className="text-white text-3xl font-bold border-b-4 border-blue-600 inline-block pb-1 mb-6">
           Education
         </h2>

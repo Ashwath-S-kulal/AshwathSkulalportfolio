@@ -41,7 +41,6 @@ app.listen(PORT, () => {
   console.log('Server listening on port', PORT);
 });
 
-// --- DB connect (optional: you can move this above if you want to fail fast) ---
 mongoose
   .connect(process.env.MONGO)
   .then(() => console.log('Connected to MongoDB'))

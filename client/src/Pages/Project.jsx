@@ -1,16 +1,10 @@
-import React from 'react';
-import PortfolioImg from "../Images/PorfolioImg.jpg";
-import AgriBookImg from '../Images/ABS.jpg';
-import SMDImg from '../Images/SMDIMG.png';
-import AuthImg from '../Images/Authentication.jpg';
-import SSWPImg from '../Images/SSWPIMG.webp';
+
 import { Link } from 'react-router-dom';
 
 export default function Project() {
-  // Array of project data
   const projects = [
     {
-      img: AuthImg,
+      img: "https://material.dahuasecurity.com/uploads/image/20240516/news0516300200.png",
       title: "MERN Authentication",
       desc: "This MERN stack website offers a user-friendly platform built with React.js. It features secure sign-up and sign-in options, including Google authentication, and allows users to update their username, email, and password with privacy protection. The platform ensures safe and efficient access for users.",
       link: "https://mern-authentication-web.onrender.com",
@@ -31,21 +25,21 @@ export default function Project() {
       linkText: "Open in Web →"
     },
     {
-      img: PortfolioImg,
+      img: "https://miro.medium.com/v2/resize:fit:1400/1*Onh9cW9KtGjDrlf5NzGYMw.jpeg",
       title: "Static Portfolio website",
       desc: "My personal portfolio website showcases my skills, projects, and experiences. It is built using HTML, CSS, and JavaScript. It serves as a central hub where visitors can learn more about me.",
       link: "https://ashwath-s-kulal.github.io/Porfolio-web/",
       linkText: "Open in Web →"
     },
     {
-      img: AgriBookImg,
+      img: "https://shopscanner.com/wp-content/uploads/2024/03/young-woman-controlling-plantation-scaled-e1711567975796-768x813.jpg",
       title: "Agri Booking system",
       desc: "This is a frontend project built with React.js, focused on connecting farmers and contractors through a digital platform. It simplifies the booking and availability of farming equipment, making it easier for small and mid-scale farmers to access essential tools.",
       link: "https://agricultural-booking-system.vercel.app/",
       linkText: "Open in Web →"
     },
     {
-      img: SMDImg,
+      img: "https://www.albeadvance.com/wp-content/uploads/2025/04/review.png",
       title: "Social Media Dashboard",
       desc: "A Social Media Dashboard is an interactive tool that allows users to monitor, analyze, and visualize data from social media platforms. It is used to track engagement metrics such as likes, comments, shares, and followers from pre-stored database data.",
       link: "https://github.com/Ashwath-S-kulal/Social-Media-Dashboard",
@@ -53,7 +47,7 @@ export default function Project() {
     },
     
     {
-      img: SSWPImg,
+      img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMeO_O53PHFJ5enVA3L-E76oBh2YjLYfZ31XXAQ-cJ6_NiK0TA",
       title: "Simple Static Web",
       desc: "This is the Simple Static Website, made by using HTML CSS, This is my First Website and Hosted on Netlify.",
       link: "https://simplestaticweb.netlify.app/",
@@ -65,21 +59,18 @@ export default function Project() {
     <div>
       <h1 className='text-3xl text-center text-white font-semibold my-7 mt-5'>Projects</h1>
 
-      {/* Projects Grid */}
       <div className="flex flex-wrap justify-center gap-9 pb-10">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative w-72 h-80 overflow-hidden shadow-lg group cursor-pointer"
+            className="relative w-72 h-80 overflow-hidden shadow-lg group cursor-pointer rounded-2xl"
           >
-            {/* Project Image */}
             <img
               src={project.img}
               alt={project.title}
               className="w-full h-96 object-cover"
             />
 
-            {/* Hover Content */}
             <div className="absolute bottom-14 left-0 right-0 bg-gray-800 text-white px-6 py-4 
                             translate-y-full group-hover:translate-y-14 transition-transform duration-500 ease-in-out">
               <h3 className="text-lg font-bold">{project.title}</h3>

@@ -11,7 +11,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div className="bg-gray-800 p-8 shadow mx-5 my-5">
+    <div className="bg-gray-800 p-8 shadow mx-5 my-5 pt-20">
       <h2 className="text-3xl text-white font-bold border-b-4 border-blue-600 inline-block pb-1 mb-8">
           Skills
         </h2>

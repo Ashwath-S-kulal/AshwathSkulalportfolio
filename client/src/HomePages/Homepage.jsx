@@ -1,9 +1,8 @@
-
+import Gif from "../Images/gifff.gif";
 
 export default function App() {
-
   return (
-    <div className="flex h-80 md:h-screen p-5">
+    <div className="flex h-[500px] md:h-screen p-3 md:p-5 pt-10">
       <div
         className="flex-1 bg-cover bg-center flex items-center justify-center"
         style={{
@@ -11,13 +10,27 @@ export default function App() {
             "url('https://png.pngtree.com/thumb_back/fh260/background/20211031/pngtree-abstract-bg-image_914283.png')",
         }}
       >
-        <div className="bg-black bg-opacity-60 p-10 rounded-xl text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">Ashwath S</h1>
-          <h1 className="text-5xl font-bold text-white mb-4">WellCome to my Portfolio</h1>
-          <br></br>
-          <p className="text-base text-gray-300">Hi, I am Ashwath S, currently studying in Computer science 
-            Engineering at S D M Institute of technology ujire.</p>
-            <p className="text-base text-gray-300">I am intrested in frontend development.I build web interfaces.</p>
+        <div className="bg-black bg-opacity-60 p-5 sm:px-2 md:p-10 sm:rounded-none md:rounded-xl text-center max-w-2xl">
+          <img
+            src={Gif}
+            alt="gif"
+            className="w-40 sm:w-80 md:w-96 lg:w-[500px] mx-auto mb-4"
+          />
+
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2">
+            Welcome to my Website
+          </h1>
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-blue-400 mb-4">
+            Ashwath S
+          </h2>
+
+         
+          <p className="text-sm sm:text-base md:text-lg text-gray-400  mt-4">
+            Scroll down to know more about me, my skills, and the projects I’ve built.
+          </p>
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 ">
+            Keep scrolling to explore my journey and connect with me.
+          </p>
         </div>
       </div>
     </div>
