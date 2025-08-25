@@ -13,7 +13,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import Image from "../Images/profilepicture.jpg"
+import Image from "../Images/profilepicture1.jpg"
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // for hamburger icon
 

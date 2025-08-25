@@ -1,4 +1,4 @@
-import Gif from "../Images/gifff.gif";
+import Gif from "../Images/gif.gif";
 
 export default function App() {
   return (
