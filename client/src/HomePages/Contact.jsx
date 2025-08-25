@@ -64,10 +64,8 @@ export default function Contact() {
           <div className="h-48 w-full overflow-hidden rounded-lg">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d521.7661014532139!2d74.89523619457073!3d13.554766676198343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1755878798866!5m2!1sen!2sin"
              width="600" 
-             height="450" 
-             allowfullscreen="" 
-             loading="lazy" 
-             referrerpolicy="no-referrer-when-downgrade">
+             height="450"  
+             loading="lazy" >
             </iframe>
           </div>
         </div>

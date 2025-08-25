@@ -9,7 +9,7 @@ import Image from "../Images/123.png"
 export default function Home() {
   return (
     <div className="bg-gray-900 text-white min-h-full font-sans">
-      <div className="grid md:grid-cols-3 gap-6 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
         <aside className="bg-gray-800  text-center md:col-span-1 max-h-fit">
           <div className='py-6'>
             <img
@@ -97,12 +97,12 @@ export default function Home() {
             <div className="flex flex-col gap-5 justify-center items-center mt-6 md:mt-0">
               <h2 className="text-white text-5xl font-bold">I'm Ashwath S</h2>
               <p className="text-gray-300">Computer Science Engineer</p>
-              <div className="flex gap-4">
+              <div className="flex gap-6 md:gap-4">
                 <a href='mailto:ashwathkulal2004@gmail.com' target='blank'>
-                  <button className="px-10 py-2 ring-2 min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Email </button>
+                  <button className="px-10 py-2 ring-2 sm:min-w-32 md:min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Email </button>
                 </a>
-                <a href="../Images/RESUME2.0.pdf" download="RESUME2.0.pdf">
-                  <button className="px-10 py-2 ring-2 min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Get CV</button>
+                <a href="../../public/pdfs/RESUME2.0.pdf" download="RESUME2.0.pdf">
+                  <button className="px-10 py-2 ring-2 sm:min-w-32 md:min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Get CV</button>
                 </a>
               </div>
             </div>

@@ -10,7 +10,7 @@ export default function App() {
             "url('https://png.pngtree.com/thumb_back/fh260/background/20211031/pngtree-abstract-bg-image_914283.png')",
         }}
       >
-        <div className="bg-black bg-opacity-60 p-5 sm:px-2 md:p-10 sm:rounded-none md:rounded-xl text-center max-w-2xl">
+        <div className="bg-black bg-opacity-60 h-full  justify-center md:h-auto p-5 sm:px-2 md:p-10 sm:rounded-none md:rounded-xl text-center max-w-3xl">
           <img
             src={Gif}
             alt="gif"
