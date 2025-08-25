@@ -9,6 +9,7 @@ import PrivateRoute from  './Components/PrivateRoute';
 import Portfollio from "./HomePages/Portfollio"
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 
+
 export default function App() {
   return (
     <div className='bg-gray-900 min-h-screen min-w-fit'>

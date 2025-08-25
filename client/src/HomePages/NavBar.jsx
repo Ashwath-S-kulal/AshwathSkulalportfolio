@@ -98,47 +98,47 @@ export default function NavBar() {
       
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex md:hidden bg-gray-900 w-full justify-end text-white justify-self-end mr-5 pt-3"
+          className="flex fixed md:hidden z-50 bg-gray-900 w-full justify-end text-white justify-self-end mr-5 pt-3 pb-2"
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={28}/> : <Menu size={28} />}
         </button>
 
       {isOpen && (
-        <div className="block md:hidden bg-gray-900 px-4 pb-3 space-y-2 font-semibold text-[18px] fixed top-26 w-full overflow-hidden">
+        <div className="block md:hidden bg-gray-900 opacity-90 px-4 pb-3 space-y-2 font-semibold  fixed top-26 right-3 z-10 w-fit overflow-hidden">
           
           <ul className="space-y-4 px-4 pt-3  ">
             <li>
-              <a href="#home" className="flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
+              <a href="#home" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white pt-9" onClick={() => setIsOpen(false)}>
                 <FaHome />Home
               </a>
             </li>
             <li>
-              <a href="#about" className="flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
+              <a href="#about" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
                 <FaUser />About
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
+              <a href="#" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
                 <FaFileAlt />Resume
               </a>
             </li>
             <li>
-              <a href="#skills" className="flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
+              <a href="#skills" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
                 <FaImage />Skill
               </a>
             </li>
             <li> 
-              <a href="#projects" className="flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
+              <a href="#projects" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
                 <FaBriefcase />Projects
               </a>
             </li>
             <li>
-              <a href="#education" className="flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
+              <a href="#education" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
                 <FaBars /> Education
               </a>
             </li>
             <li>
-              <a href="#contact" className="flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
+              <a href="#contact" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
                 <FaEnvelope /> Contact
               </a>
             </li>

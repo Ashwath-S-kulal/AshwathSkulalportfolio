@@ -2,7 +2,7 @@ import React from 'react';
 import imageAshwath from '../Images/dev-environment.jpg';
 import { Link } from 'react-router-dom';
 import profilePicture from '../Images/profilepicture1.jpg';
-import { FaLinkedin, FaTwitter, FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedin, FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import Image from "../Images/123.png"
 
