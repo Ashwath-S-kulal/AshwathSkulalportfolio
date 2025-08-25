@@ -101,7 +101,7 @@ export default function Home() {
                 <a href='mailto:ashwathkulal2004@gmail.com' target='blank'>
                   <button className="px-10 py-2 ring-2 sm:min-w-32 md:min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Email </button>
                 </a>
-                <a href="../../public/pdfs/RESUME2.0.pdf" download="RESUME2.0.pdf">
+                <a href="/pdfs/RESUME2.0.pdf">
                   <button className="px-10 py-2 ring-2 sm:min-w-32 md:min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Get CV</button>
                 </a>
               </div>
