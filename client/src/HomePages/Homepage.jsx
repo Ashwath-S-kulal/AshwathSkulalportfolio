@@ -2,7 +2,7 @@ import Gif from "../Images/gifff.gif";
 
 export default function App() {
   return (
-    <div className="flex h-[500px] md:h-screen p-3 md:p-5 pt-10">
+    <div className="flex h-[500px] md:h-screen px-5 md:p-5 pt-10">
       <div
         className="flex-1 bg-cover bg-center flex items-center justify-center"
         style={{
