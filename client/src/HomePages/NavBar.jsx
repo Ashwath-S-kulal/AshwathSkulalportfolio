@@ -98,7 +98,7 @@ export default function NavBar() {
       
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex fixed md:hidden z-50 bg-gray-900 bg-opacity-0 w-full justify-end text-white justify-self-end mr-5 pt-3 pb-2"
+          className="flex fixed md:hidden z-50 bg-gray-900  w-fit pl-3 rounded-bl-3xl justify-end text-white justify-self-end mr-5 pt-1 pb-2"
         >
           {isOpen ? <X size={28}/> : <Menu size={28} />}
         </button>
