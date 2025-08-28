@@ -99,10 +99,10 @@ export default function Home() {
               <p className="text-gray-300">Computer Science Engineer</p>
               <div className="flex gap-6 md:gap-4">
                 <a href='mailto:ashwathkulal2004@gmail.com' target='blank'>
-                  <button className="px-10 py-2 ring-2 sm:min-w-32 md:min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Email </button>
+                  <button className="w-20 md:px-10 py-2 ring-2 sm:min-w-32 md:min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Email </button>
                 </a>
                 <a href="https://ashwathskulalportfolio.onrender.com//pdfs/RESUME2.0.pdf" download="RESUME_Ashwath_S.pdf">
-                  <button className="px-10 py-2 ring-2 sm:min-w-32 md:min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Get CV</button>
+                  <button className="w-20 md:px-10 py-2 ring-2 sm:min-w-32 md:min-w-40 ring-blue-900 rounded-lg hover:bg-yellow-500 text-sm"> Resume</button>
                 </a>
               </div>
             </div>
@@ -141,10 +141,6 @@ export default function Home() {
               />
             </div>
           </section>
-
-
-
-
 
         </main>
       </div>

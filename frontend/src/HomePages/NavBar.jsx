@@ -66,11 +66,6 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-3 hover:text-blue-500">
-                <FaFileAlt />Resume
-              </a>
-            </li>
-            <li>
               <a href="#skills" className="flex items-center gap-3 hover:text-blue-500">
                 <FaImage />Skill
               </a>
@@ -104,11 +99,11 @@ export default function NavBar() {
       </button>
 
       {isOpen && (
-        <div className="block md:hidden bg-gray-900 opacity-90 px-4 pb-3 space-y-2 font-semibold  fixed top-26 right-3 z-10 w-fit overflow-hidden">
+        <div className="block md:hidden bg-gray-900 opacity-90 px-4 pb-3 space-y-2 font-semibold  fixed top-26 right-3 z-10 w-fit overflow-hidden rounded-bl-3xl">
 
           <ul className="space-y-4 px-4 pt-3  ">
             <li>
-              <a href="#home" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white pt-9" onClick={() => setIsOpen(false)}>
+              <a href="#" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white pt-9" onClick={() => setIsOpen(false)}>
                 <FaHome />Home
               </a>
             </li>
@@ -117,11 +112,7 @@ export default function NavBar() {
                 <FaUser />About
               </a>
             </li>
-            <li>
-              <a href="#" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
-                <FaFileAlt />Resume
-              </a>
-            </li>
+
             <li>
               <a href="#skills" className="text-sm flex items-center gap-3 hover:text-blue-500 text-white" onClick={() => setIsOpen(false)}>
                 <FaImage />Skill

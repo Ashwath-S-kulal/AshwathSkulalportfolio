@@ -1,7 +1,16 @@
-
+import { FaArrowAltCircleUp, FaArrowCircleDown } from "react-icons/fa";
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 
+
 export default function Project() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+
   const projects = [
     {
       img: "https://material.dahuasecurity.com/uploads/image/20240516/news0516300200.png",
@@ -55,34 +64,52 @@ export default function Project() {
     }
   ];
 
+
+
   return (
     <div>
-      <h1 className='text-3xl text-center text-white font-semibold my-7 mt-5'>Projects</h1>
+      <h1 className="text-3xl text-center text-white font-semibold my-7 mt-5">
+        Projects
+      </h1>
 
       <div className="flex flex-wrap justify-center gap-9 pb-10">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="relative w-72 h-80 overflow-hidden shadow-lg group cursor-pointer rounded-2xl"
-          >
-            <img
-              src={project.img}
-              alt={project.title}
-              className="w-full h-96 object-cover"
-            />
+        {projects.map((project, index) => {
+          const isActive = activeIndex === index;
 
-            <div className="absolute bottom-14 left-0 right-0 bg-gray-800 text-white px-6 py-4 
-                            translate-y-full group-hover:translate-y-14 transition-transform duration-500 ease-in-out">
-              <h3 className="text-lg font-bold">{project.title}</h3>
-              <p className="text-gray-400 text-sm mt-2">{project.desc}</p>
-              <Link to={project.link} target="_blank">
-                <p className="text-yellow-400 font-semibold text-sm mt-4">
-                  {project.linkText}
-                </p>
-              </Link>
+          return (
+            <div
+              key={index}
+              className="relative w-72 h-80 overflow-hidden shadow-lg rounded-2xl cursor-pointer"
+              onMouseEnter={() => setActiveIndex(index)}
+              onMouseLeave={() => setActiveIndex(null)}
+              onClick={() => handleToggle(index)}
+            >
+              <img
+                src={project.img}
+                alt={project.title}
+                className="w-full h-96 object-cover"
+              />
+
+              <div
+                className={`absolute bottom-14 left-0 right-0 bg-gray-800 text-white px-6 py-4 
+                  transition-transform duration-500 ease-in-out
+                  ${isActive ? "translate-y-14" : "translate-y-full"}`}
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="flex items-center text-lg font-bold gap-2 ">
+                    {project.title}</h3>
+                  <span>{isActive ? <FaArrowCircleDown /> : <FaArrowAltCircleUp />}</span>
+                </div>
+                <p className="text-gray-400 text-sm mt-2">{project.desc}</p>
+                <Link to={project.link} target="_blank">
+                  <p className="text-yellow-400 font-semibold text-sm mt-4">
+                    {project.linkText}
+                  </p>
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
