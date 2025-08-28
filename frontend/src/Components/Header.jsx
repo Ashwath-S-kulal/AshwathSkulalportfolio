@@ -10,7 +10,7 @@ export default function Header() {
           <Link to='/' className=" text-white hover:text-blue-700 text-xs md:text-lg font-bold"><li>Home</li></Link>
           <Link to='/portfolio' className=" text-white  hover:text-blue-700 text-xs md:text-lg font-bold"><li>Portfolio</li></Link>
           <Link to='/project' className=" text-white  hover:text-blue-700 text-xs md:text-lg font-bold"><li>Project</li></Link>
-          <Link to='/profile' className=" text-white  hover:text-blue-700 text-xs md:text-lg font-bold">
+          <Link to='/profile' className="ml-4 text-white  hover:text-blue-700 text-xs md:text-lg font-bold">
             {currentUser ? (
               <img src={currentUser.profilePicture} alt="image"
                 className="h-7 w-7 rounded-full object-cover" />

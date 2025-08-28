@@ -32,7 +32,6 @@ export default function Portfollio() {
                     <section id="contact">
                         <Contact />
                     </section>
-
                 </div>
             </div>
             <Footer />
