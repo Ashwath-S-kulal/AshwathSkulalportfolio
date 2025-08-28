@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { useSelector } from "react-redux";
 export default function Header() {
   const { currentUser } = useSelector(state => state.user);
@@ -9,7 +9,10 @@ export default function Header() {
         <ul className='flex gap-2 md:gap-4 items-center '>
           <Link to='/' className=" text-white hover:text-blue-700 text-xs md:text-lg font-bold"><li>Home</li></Link>
           <Link to='/portfolio' className=" text-white  hover:text-blue-700 text-xs md:text-lg font-bold"><li>Portfolio</li></Link>
-          <Link to='/project' className=" text-white  hover:text-blue-700 text-xs md:text-lg font-bold"><li>Project</li></Link>
+          <Link to='/project' className=" text-white  hover:text-blue-700 text-xs md:text-lg font-bold">
+            {currentUser ? (
+              <NavLink to='/project'>Project</NavLink>
+            ) : (<NavLink to='/logintoproject'>Project</NavLink>)}</Link>
           <Link to='/profile' className="ml-3 text-white  hover:text-blue-700 text-xs md:text-lg font-bold">
             {currentUser ? (
               <img src={currentUser.profilePicture} alt="image"

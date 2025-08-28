@@ -17,42 +17,42 @@ export default function Project() {
       title: "MERN Authentication",
       desc: "This MERN stack website offers a user-friendly platform built with React.js. It features secure sign-up and sign-in options, including Google authentication, and allows users to update their username, email, and password with privacy protection. The platform ensures safe and efficient access for users.",
       link: "https://mern-authentication-web.onrender.com",
-      linkText: "Open in Web →"
+      GitLink:"#"
     },
     {
       img: "https://cdn.vectorstock.com/i/1000v/05/72/blue-chat-app-icon-on-background-3d-vector-42730572.jpg",
       title: "MERN Comment Page",
       desc: "This MERN stack website built with React.js. It features Commenting on post that can store on database and display on web, and allows users to update and delete their Comments. ",
       link: "https://mern-comment-page.onrender.com",
-      linkText: "Open in Web →"
+      GitLink:"#"
     },
     {
       img: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/lR_Radiant.png?v=1734949919",
       title: "Boat Advertising app",
       desc: "Its a frontend made by using React.js and Tailwind CSS ",
       link: "https://boat-product-advertising-frontend.vercel.app/",
-      linkText: "Open in Web →"
+      GitLink:"#"
     },
     {
       img: "https://miro.medium.com/v2/resize:fit:1400/1*Onh9cW9KtGjDrlf5NzGYMw.jpeg",
       title: "Static Portfolio website",
       desc: "My personal portfolio website showcases my skills, projects, and experiences. It is built using HTML, CSS, and JavaScript. It serves as a central hub where visitors can learn more about me.",
       link: "https://ashwath-s-kulal.github.io/Porfolio-web/",
-      linkText: "Open in Web →"
+      GitLink:"#"
     },
     {
       img: "https://shopscanner.com/wp-content/uploads/2024/03/young-woman-controlling-plantation-scaled-e1711567975796-768x813.jpg",
       title: "Agri Booking system",
       desc: "This is a frontend project built with React.js, focused on connecting farmers and contractors through a digital platform. It simplifies the booking and availability of farming equipment, making it easier for small and mid-scale farmers to access essential tools.",
       link: "https://agricultural-booking-system.vercel.app/",
-      linkText: "Open in Web →"
+      GitLink:"#"
     },
     {
       img: "https://www.albeadvance.com/wp-content/uploads/2025/04/review.png",
       title: "Social Media Dashboard",
       desc: "A Social Media Dashboard is an interactive tool that allows users to monitor, analyze, and visualize data from social media platforms. It is used to track engagement metrics such as likes, comments, shares, and followers from pre-stored database data.",
       link: "https://github.com/Ashwath-S-kulal/Social-Media-Dashboard",
-      linkText: "Open GitHub →"
+      GitLink:"#"
     },
 
     {
@@ -60,7 +60,7 @@ export default function Project() {
       title: "Simple Static Web",
       desc: "This is the Simple Static Website, made by using HTML CSS, This is my First Website and Hosted on Netlify.",
       link: "https://simplestaticweb.netlify.app/",
-      linkText: "Open in Web →"
+      GitLink:"#"
     }
   ];
 
@@ -101,11 +101,18 @@ export default function Project() {
                   <span>{isActive ? <FaArrowAltCircleDown /> : <FaArrowAltCircleUp />}</span>
                 </div>
                 <p className="text-gray-400 text-sm mt-2">{project.desc}</p>
+                <div className="flex justify-between ">
                 <Link to={project.link} target="_blank">
                   <p className="text-yellow-400 font-semibold text-sm mt-4">
-                    {project.linkText}
+                    Open in web
                   </p>
                 </Link>
+                <Link to={project.GitLink} target="_blank">
+                  <p className="text-yellow-400 font-semibold text-sm mt-4">
+                    Git Repo
+                  </p>
+                </Link>
+                </div>
               </div>
             </div>
           );

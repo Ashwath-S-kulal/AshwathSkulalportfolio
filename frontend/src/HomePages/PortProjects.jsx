@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 const ProjectData = [
@@ -42,7 +43,7 @@ const ProjectData = [
     name: "Social Media Dashboard",
     type: "Static Webs & frontends",
     image: "https://www.albeadvance.com/wp-content/uploads/2025/04/review.png",
-    link: "https://github.com/Ashwath-S-kulal/Social-Media-Dashboard"
+    link: "#"
   },
   {
     id: 7,
@@ -54,6 +55,7 @@ const ProjectData = [
 ];
 
 export default function PortProjects() {
+    const { currentUser } = useSelector(state => state.user);
   const [search, setSearch] = useState("");
   const [projectFilter, setProjectFilter] = useState("");
 
@@ -109,9 +111,16 @@ export default function PortProjects() {
                 </div>
                 <p className="text-xs text-white mb-2">{project.type}</p>
               </div>
+              <div className="flex justify-between text-xs ">
               <button className=" px-6 pb-4 w-full text-yellow-500 hover:text-yellow-300">
                 <NavLink to={project.link} target="blank">Open in Web</NavLink>
               </button>
+              <button className=" px-6 pb-4 w-full text-yellow-500 hover:text-yellow-300">
+                {currentUser ? (
+              <NavLink to='/project'>Know more</NavLink>
+            ) : (<NavLink to='/logintoproject'>Know more</NavLink>)}
+              </button>
+              </div>
             </div>
           ))}
         </div>

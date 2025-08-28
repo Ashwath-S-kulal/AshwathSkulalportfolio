@@ -8,6 +8,7 @@ import Header from './Components/Header';
 import PrivateRoute from './Components/PrivateRoute';
 import Portfollio from "./HomePages/Portfollio"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LoginToProject from './Pages/LoginToProject';
 
 
 export default function App() {
@@ -20,9 +21,10 @@ export default function App() {
           <Route path="/portfolio" element={<Portfollio />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/sign-in" element={<SignIn />} />
-          <Route path="/project" element={<Project />} />
+          <Route path="/logintoproject" element={<LoginToProject />} />
           <Route element={<PrivateRoute />}>
             <Route path="/profile" element={<Profile />} />
+            <Route path="/project" element={<Project />} />
           </Route>
         </Routes>
       </BrowserRouter>
