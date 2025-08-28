@@ -1,4 +1,4 @@
-import { FaArrowAltCircleUp, FaArrowCircleDown } from "react-icons/fa";
+import { FaArrowAltCircleUp, FaArrowAltCircleDown } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 
@@ -98,7 +98,7 @@ export default function Project() {
                 <div className="flex justify-between items-center">
                   <h3 className="flex items-center text-lg font-bold gap-2 ">
                     {project.title}</h3>
-                  <span>{isActive ? <FaArrowCircleDown /> : <FaArrowAltCircleUp />}</span>
+                  <span>{isActive ? <FaArrowAltCircleDown /> : <FaArrowAltCircleUp />}</span>
                 </div>
                 <p className="text-gray-400 text-sm mt-2">{project.desc}</p>
                 <Link to={project.link} target="_blank">
