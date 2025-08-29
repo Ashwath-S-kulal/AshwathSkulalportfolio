@@ -2,9 +2,9 @@ import React from "react";
 
 export default function LoginToProject() {
     return (
-        <div className="min-h-screen flex items-center justify-center  p-4">
+        <div className="min-h-screen flex items-center justify-center pt-0 p-4">
             <div className="w-full max-w-fit bg-gray-800 shadow-2xl rounded-2xl  p-8 hover:scale-105 transform transition duration-500">
-                <h2 className="text-4xl text-sky-500 font-bold text-center">
+                <h2 className="text-4xl text-sky-500 font-bold text-center leading-tight">
                     Login to Access My Projects
                 </h2>
 
@@ -14,6 +14,7 @@ export default function LoginToProject() {
                         Sign in
                     </a>
                 </p>
+                 
             </div>
         </div>
     );
