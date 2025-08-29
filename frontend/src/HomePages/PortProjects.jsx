@@ -55,7 +55,7 @@ const ProjectData = [
 ];
 
 export default function PortProjects() {
-    const { currentUser } = useSelector(state => state.user);
+  const { currentUser } = useSelector(state => state.user);
   const [search, setSearch] = useState("");
   const [projectFilter, setProjectFilter] = useState("");
 
@@ -92,34 +92,30 @@ export default function PortProjects() {
           </select>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex flex-col gap-6">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="bg-gray-700 rounded-xl shadow hover:shadow-lg transition overflow-hidden relative"
+              className="sm:flex md:flex-row bg-gray-700 rounded-xl shadow hover:shadow-lg transition overflow-hidden relative justify-between "
             >
-              <div className="relative">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="h-48 w-full object-cover"
-                />
-              </div>
+              <div className="flex">
+              <img src={project.image} alt="img" className="w-40 h-24 object-cover mb-0 hidden md:block" />
               <div className="p-4">
                 <div className="flex justify-between items-center mb-1">
                   <h2 className="text-lg font-semibold text-white">{project.name}</h2>
                 </div>
                 <p className="text-xs text-white mb-2">{project.type}</p>
               </div>
-              <div className="flex justify-between text-xs ">
-              <button className=" px-6 pb-4 w-full text-yellow-500 hover:text-yellow-300">
-                <NavLink to={project.link} target="blank">Open in Web</NavLink>
-              </button>
-              <button className=" px-6 pb-4 w-full text-yellow-500 hover:text-yellow-300">
-                {currentUser ? (
-              <NavLink to='/project'>Know more</NavLink>
-            ) : (<NavLink to='/logintoproject'>Know more</NavLink>)}
-              </button>
+              </div>
+              <div className="flex justify-between text-xs  ">
+                <button className=" px-6 pb-4  md:w-60  text-yellow-500 hover:text-yellow-300 ">
+                  <NavLink to={project.link} target="blank">Open in Web</NavLink>
+                </button>
+                <button className=" px-6 pb-4  md:w-60 text-yellow-500 hover:text-yellow-300">
+                  {currentUser ? (
+                    <NavLink to='/project'>Know more</NavLink>
+                  ) : (<NavLink to='/logintoproject'>Know more</NavLink>)}
+                </button>
               </div>
             </div>
           ))}
