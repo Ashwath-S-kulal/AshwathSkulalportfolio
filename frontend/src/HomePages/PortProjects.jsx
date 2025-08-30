@@ -29,7 +29,7 @@ const ProjectData = [
     name: "Boat Clone Web",
     type: "Static Webs & frontends",
     image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/lR_Radiant.png?v=1734949919",
-    link: "https://boat-product-advertising-frontend.vercel.app/"
+    link: "https://smartwatch-product-showcase-website.vercel.app/"
   },
   {
     id: 5,

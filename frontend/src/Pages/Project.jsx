@@ -30,7 +30,7 @@ export default function Project() {
       img: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/lR_Radiant.png?v=1734949919",
       title: "Boat Advertising app",
       desc: "Its a frontend made by using React.js and Tailwind CSS ",
-      link: "https://boat-product-advertising-frontend.vercel.app/",
+      link: "https://smartwatch-product-showcase-website.vercel.app/",
       GitLink: "https://github.com/Ashwath-S-kulal/Boat-product-advertising-frontend",
     },
     {
